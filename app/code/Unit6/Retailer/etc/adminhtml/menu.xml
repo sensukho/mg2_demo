@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Retailer::sensukho" title="Sensukho" translate="title" module="Unit6_Retailer" sortOrder="100" resource="Unit6_Retailer::retailer"/>
+        <add id="Retailer::retailer" title="Retailers" translate="title" module="Unit6_Retailer" sortOrder="10" parent="Retailer::sensukho" action="retailer/index" resource="Unit6_Retailer::retailer"/>
+    </menu>
+</config>
