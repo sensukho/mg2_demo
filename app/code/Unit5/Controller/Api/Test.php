@@ -31,6 +31,7 @@ class Test extends \Magento\Framework\App\Action\Action
     }
 
 
+    // retailer/api/test
     public function execute() {
         $data = [];
         $this->checkGetById($data);
@@ -42,7 +43,7 @@ class Test extends \Magento\Framework\App\Action\Action
     protected function checkGetById(&$data) {
         $dataObject = $this->repository->getById(1);
 
-        if ($dataObject->getId() && $dataObject->getName()) {
+        if ($dataObject->getRetailerId() && $dataObject->getName()) {
             $data['getById'] = ['status' => 'OK', 'id' => 1, 'name' => $dataObject->getName()];
         }
     }
