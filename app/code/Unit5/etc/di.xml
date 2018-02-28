@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Unit5\RetailerApi\Api\Data\RetailerSearchResultInterface"
+                type="Magento\Framework\Api\SearchResults" />
+    <preference for="Unit5\RetailerApi\Api\Data\RetailerInterface"
+                type="Unit5\RetailerApi\Model\Data\Retailer" />
+
+    <preference for="Unit5\RetailerApi\Api\RetailerRepositoryInterface"
+                type="Unit5\RetailerApi\Model\RetailerRepository"/>
+</config>

@@ -1,4 +1,7 @@
 /*
+!/app
+/app/*
 !/app/code
 /app/code/Magento
-!/README.md
+!.gitignore
+!README.md
