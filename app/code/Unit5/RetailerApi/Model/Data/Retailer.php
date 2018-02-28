@@ -15,7 +15,7 @@ class Retailer extends \Magento\Framework\Api\AbstractExtensibleObject implement
     /**
      * @return string
      */
-    public function getRetailerId()
+    public function getId()
     {
         return $this->_get(self::RETAILER_ID);
     }
@@ -24,7 +24,7 @@ class Retailer extends \Magento\Framework\Api\AbstractExtensibleObject implement
      * @param string $retailer_id
      * @return $this
      */
-    public function setRetailerId($retailer_id)
+    public function setId($retailer_id)
     {
         return $this->setData(self::RETAILER_ID, $retailer_id);
     }

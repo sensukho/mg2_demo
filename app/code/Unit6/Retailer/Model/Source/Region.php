@@ -33,7 +33,8 @@ class Region implements OptionSourceInterface
             ['label' => 'Alaska', 'value' => '2'],            
             ['label' => 'New York', 'value' => '43'],            
             ['label' => 'Quebec', 'value' => '76'],
-            ['label' => 'Ontario', 'value' => '74']
+            ['label' => 'Ontario', 'value' => '74'],
+            ['label' => 'Malasia', 'value' => '4']
         ];
 
         return $this->options;

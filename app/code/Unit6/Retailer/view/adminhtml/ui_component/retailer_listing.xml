@@ -160,6 +160,20 @@
                 </item>
             </argument>
         </column>
+        <column name="postcode">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="editor" xsi:type="array">
+                        <item name="editorType" xsi:type="string">text</item>
+                        <item name="validation" xsi:type="array">
+                            <item name="validate-identifier" xsi:type="boolean">true</item>
+                        </item>
+                    </item>
+                    <item name="label" xsi:type="string" translate="true">Postcode</item>
+                </item>
+            </argument>
+        </column>
         <actionsColumn name="actions" class="Unit6\Retailer\Ui\Component\Listing\Column\RetailerActions">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">

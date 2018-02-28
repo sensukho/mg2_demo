@@ -22,13 +22,13 @@ interface RetailerInterface extends \Magento\Framework\Api\ExtensibleDataInterfa
     /**
      * @return string
      */
-    public function getRetailerId();
+    public function getId();
 
     /**
      * @param string $retailer_id
      * @return $this
      */
-    public function setRetailerId($retailer_id);
+    public function setId($retailer_id);
 
     /**
      * @return string
