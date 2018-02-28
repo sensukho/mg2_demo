@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="config">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="welcome_message" type="welcomeMessage" minOccurs="1" maxOccurs="1">
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="welcomeMessage">
+        <xs:annotation>
+            <xs:documentation>
+                Welcome Message declaration.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:any  minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

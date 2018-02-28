@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Unit1_FreeGeoIp:etc/welcome.xsd">
+    <welcome_message>
+        <default>Default HELLO</default>
+        <us>
+          <default>Default US HELLO</default>
+          <ca>California HELLO</ca>
+        </us>
+        <mx>
+            <default>Default HELLO from MX</default>
+            <zac>Hello from ZAC.</zac>
+        </mx>
+    </welcome_message>
+</config>
